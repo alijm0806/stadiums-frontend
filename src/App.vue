@@ -15,6 +15,20 @@
   color: #060607;
 }
 
+#info {
+  display: inline-flex;
+  justify-content: initial;
+  align-items: center;
+  font-size: 1.5rem;
+  position: center;
+  border: 1px solid rgba(50, 50, 50);
+  width: 500px;
+  height: 200px;
+  border-radius: 20px;
+  box-shadow: 10px 10px 10px;
+  background-color: rgb(171, 203, 124);
+}
+
 h1 {
   color: red
 }
@@ -39,10 +53,11 @@ nav a.router-link-exact-active {
 
 #create-b {
   background-color: rgb(65, 167, 193);
+
 }
 
 #show-b {
-  background-color: rgb(173, 110, 138);
+  background-color: rgb(198, 170, 216);
 }
 
 #update-b {

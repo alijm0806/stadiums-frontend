@@ -66,9 +66,10 @@ export default {
 <template>
 
   <div class="home">
-
-    <h1><b>{{ message1 }}</b></h1>
-    <h1><b>{{ message2 }}</b></h1>
+    <div id="title">
+      <h1><b>{{ message1 }}</b></h1>
+      <h1><b>{{ message2 }}</b></h1>
+    </div>
     <hr>
     <hr>
 
@@ -84,11 +85,17 @@ export default {
 
     <hr>
     <hr>
+
     <div v-for="stadium in stadiums">
-      <p><b>Name: </b>{{ stadium.name }}</p>
-      <p><b>City: </b>{{ stadium.city }}</p>
-      <p><b>Address: </b>{{ stadium.address }}</p>
-      <p><img v-bind:src="stadium.image" width="450" height="250"></p>
+      <div id="info">
+        <ul>
+          <p><b>Name: </b>{{ stadium.name }}</p>
+          <p><b>City: </b>{{ stadium.city }}</p>
+          <p><b>Address: </b>{{ stadium.address }}</p>
+        </ul>
+      </div>
+      <p><img v-bind:src="stadium.image" width="550" height="350"></p>
+
       <button id="show-b" v-on:click="showStadium(stadium)">More Info</button>
       <hr>
       <hr>
