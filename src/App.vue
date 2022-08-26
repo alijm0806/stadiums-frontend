@@ -18,17 +18,24 @@
 }
 
 #info {
-  display: inline-flex;
-  justify-content: initial;
+  display: inline-block;
+  justify-content: center;
   align-items: center;
   font-size: 1.5rem;
   position: center;
   border: 1px solid rgba(50, 50, 50);
   width: 500px;
-  height: 200px;
+  height: 250px;
   border-radius: 20px;
   box-shadow: 10px 10px 10px;
   background-color: rgb(171, 203, 124);
+}
+
+#image {
+  display: inline-block;
+  position: center;
+  width: 700px;
+  height: 350px
 }
 
 h1 {
