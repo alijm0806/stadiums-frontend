@@ -3,6 +3,9 @@ import HomeView from '../views/HomeView.vue'
 import StadiumsIndexView from '../views/StadiumsIndexView.vue'
 import StadiumsNewView from "../views/StadiumsNewView.vue";
 import StadiumsShowView from "../views/StadiumsShowView.vue";
+import SignupView from "../views/SignupView.vue";
+import LoginView from "../views/LoginView.vue";
+import LogoutView from "../views/LogoutView.vue";
 
 const routes = [
   {
@@ -24,6 +27,21 @@ const routes = [
     path: "/stadiums/:id",
     name: "stadiums-show",
     component: StadiumsShowView
+  },
+  {
+    path: "/signup",
+    name: "signup",
+    component: SignupView
+  },
+  {
+    path: "/login",
+    name: "login",
+    component: LoginView
+  },
+  {
+    path: "/logout",
+    name: "logout",
+    component: LogoutView
   },
   {
     path: '/about',
