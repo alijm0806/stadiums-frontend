@@ -17,7 +17,14 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #060607;
+  color: #973597;
+
+}
+
+body {
+  background-image: url("../src/assets/WCLogo.webp");
+  background-repeat: repeat-x;
+  background-position: -35%;
 }
 
 #info {
