@@ -180,4 +180,12 @@ h1 {
   border-top-left-radius: 30px;
   border-bottom-left-radius: 30px
 }
+
+iframe {
+  position: center;
+  width: 750px;
+  max-width: 100%;
+  height: 500px;
+
+}
 </style>

@@ -41,15 +41,15 @@ export default {
       </div>
     </div>
 
-    <div class="card">
+    <div class="card d-flex" style="max-width: 98%;">
       <section>
-        <iframe :src="stadium.video_url" width="750" height="500" frameborder="0"
+        <iframe :src="stadium.video_url" frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowfullscreen></iframe>
       </section>
     </div>
     <div>
-      <router-link to="/">Back to all stadiums</router-link>
+      <router-link to="/stadiums">Back to all stadiums</router-link>
     </div>
   </div>
 </template>
