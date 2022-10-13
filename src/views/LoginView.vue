@@ -47,7 +47,7 @@ export default {
               </ul>
               <div class="form-row">
                 <div class="col-lg-7">
-                  <input type="email" placeholder="Email-Address" class="form-control m-4 p-6 mt-4"
+                  <input type="email" placeholder="Email" class="form-control m-4 p-6 mt-4"
                     v-model="newSessionParams.email">
                 </div>
               </div>
@@ -62,10 +62,10 @@ export default {
                   <button class="btn1 m-4 mb-5" type="submit" value="Submit">Login</button>
                 </div>
               </div>
-              <div class="remember d-flex">
+              <div class="text d-flex">
                 <label><input type="checkbox">Remember me</label>
               </div>
-              <div class="remember d-flex mt-2">
+              <div class="text d-flex mt-2">
                 <p>Don't have an account? <a href="/signup">Register here</a></p>
               </div>
             </Form>
@@ -88,10 +88,11 @@ form {
 
 .authentication {
   background: rgb(219, 226, 226);
-  height: 100vh;
+  height: 100%;
   justify-content: center;
   display: flex;
   align-items: center;
+  margin-top: 180px;
 }
 
 
@@ -101,6 +102,7 @@ form {
   background: linear-gradient(255deg, #e91e63, #03a9f4);
   z-index: 1;
   mix-blend-mode: darken;
+  box-shadow: 10px 10px 10px 10px;
 }
 
 .img1 {
@@ -140,5 +142,10 @@ h2 {
   border-bottom: #03a9f4 solid;
   border-width: 5px;
 
+}
+
+.text {
+  font-weight: bold;
+  color: rgb(20, 21, 22);
 }
 </style>

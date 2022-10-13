@@ -70,7 +70,7 @@ export default {
 
 body {
   font-family: "Roboto", sans-serif;
-  height: 160vh
+  height: 100vh
 }
 
 .navbar {
@@ -110,19 +110,23 @@ body {
 #info {
   padding-top: 30px;
   display: absolute;
-  justify-content: center;
-  align-items: center;
   font-size: 1.5rem;
-  position: center;
+  position: start;
   border: 1px solid rgba(50, 50, 50);
-  width: 400px;
-  height: 300px;
+  width: 450px;
+  height: 350px;
   border-radius: 20px;
   box-shadow: 10px 10px 10px;
   background-color: rgb(171, 203, 124);
   top: 0;
   left: 0;
-  float: unset;
+  float: none;
+}
+
+@media screen and (max-width: 600px) {
+  #info {
+    width: 350px;
+  }
 }
 
 .Logo {
@@ -137,6 +141,10 @@ h1 {
   color: red
 }
 
+
+.show-stadiums {
+  height: 122vh
+}
 
 #stadium-image {
   align-items: start;
