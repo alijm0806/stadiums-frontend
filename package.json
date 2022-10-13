@@ -7,14 +7,22 @@
     "build": "vue-cli-service build"
   },
   "dependencies": {
+    "@cloudgeek/vue3-video-player": "^0.3.10",
+    "@types/geojson": "^7946.0.10",
+    "@videojs-player/vue": "^1.0.0",
     "axios": "^0.27.2",
+    "bootstrap": "^5.2.2",
     "core-js": "^3.8.3",
+    "mapbox": "^1.0.0-beta10",
+    "mapbox-gl": "^2.10.0",
+    "v-video-embed": "^1.0.8",
     "vue": "^3.2.13",
     "vue-router": "^4.0.3"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~5.0.0",
     "@vue/cli-plugin-router": "~5.0.0",
-    "@vue/cli-service": "~5.0.0"
+    "@vue/cli-service": "~5.0.0",
+    "video.js": "^7.20.3"
   }
 }

@@ -1,6 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
-import StadiumsIndexView from '../views/StadiumsIndexView.vue'
+import StadiumsIndexView from "../views/StadiumsIndexView.vue";
 import StadiumsNewView from "../views/StadiumsNewView.vue";
 import StadiumsShowView from "../views/StadiumsShowView.vue";
 import SignupView from "../views/SignupView.vue";
@@ -14,8 +14,8 @@ const routes = [
     component: HomeView
   },
   {
-    path: '/stadiums',
-    name: 'stadiums-index',
+    path: "/stadiums",
+    name: "stadiums-index",
     component: StadiumsIndexView
   },
   {

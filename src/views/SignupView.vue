@@ -25,29 +25,54 @@ export default {
 </script>
 
 <template>
-  <div class="signup">
-    <form v-on:submit.prevent="submit()">
-      <h1>Signup</h1>
-      <ul>
-        <li v-for="error in errors" v-bind:key="error">{{ error }}</li>
-      </ul>
-      <div>
-        <label>Name:</label>
-        <input type="text" v-model="newUserParams.name" />
+  <div class="authentication">
+    <section class="Form my-4 mt-5">
+      <div class="container">
+        <div class="row no-gutters">
+          <div class="col-lg-5">
+            <img src="../assets/WCLogo.webp" class="img1" alt="">
+          </div>
+          <div class="col-lg-7 px-5 pt-5">
+            <h2>SIGN UP</h2>
+            <Form v-on:submit.prevent="submit()">
+              <ul>
+                <li v-for="error in errors" v-bind:key="error" id="errors">{{ error }}</li>
+              </ul>
+              <div class="form-row">
+                <div class="col-lg-7">
+                  <span></span>
+                  <input type="text" placeholder="Name" class="form-control m-4 p-6" v-model="newUserParams.name">
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="col-lg-7">
+                  <span></span>
+                  <input type="email" placeholder="Email" v-model="newUserParams.email" class="form-control m-4 p-6">
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="col-lg-7">
+                  <span></span>
+                  <input type="password" placeholder="Password" v-model="newUserParams.password"
+                    class="form-control m-4 p-6">
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="col-lg-7">
+                  <span></span>
+                  <input type="password" placeholder="Password confirmation"
+                    v-model="newUserParams.password_confirmation" class="form-control m-4 p-6">
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="col-lg-7">
+                  <button type="submit" value="Submit" class="btn1 m-4 mb-5">Sign Up</button>
+                </div>
+              </div>
+            </Form>
+          </div>
+        </div>
       </div>
-      <div>
-        <label>Email:</label>
-        <input type="email" v-model="newUserParams.email" />
-      </div>
-      <div>
-        <label>Password:</label>
-        <input type="password" v-model="newUserParams.password" />
-      </div>
-      <div>
-        <label>Password confirmation:</label>
-        <input type="password" v-model="newUserParams.password_confirmation" />
-      </div>
-      <input type="submit" value="Submit" />
-    </form>
+    </section>
   </div>
 </template>
