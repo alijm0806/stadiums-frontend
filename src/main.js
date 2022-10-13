@@ -9,7 +9,7 @@ import 'video.js/dist/video-js.css'
 
 
 import Embed from 'v-video-embed'
-axios.defaults.baseURL = process.env.NODE_ENV === "development" ? "http://localhost:3000" : "/";
+axios.defaults.baseURL = process.env.NODE_ENV === "development" ? "http://localhost:3000" : "https://mighty-plateau-71758.herokuapp.com";
 
 var jwt = localStorage.getItem("jwt");
 if (jwt) {
