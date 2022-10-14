@@ -29,7 +29,7 @@ export default {
             <img class="img-responsive" v-bind:src="stadium.image" v-bind:alt="stadium.name" type="video/mp4" />
           </div>
           <div class="col-md-6">
-            <div class="card-body mt-8 pt-6 px-5">
+            <div class="card-body mt-8 pt-6">
               <h5 class="card-title"></h5>
               <div id="info">
                 <h3><b>Name : </b>{{ stadium.name }}</h3>
