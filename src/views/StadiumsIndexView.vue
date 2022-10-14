@@ -22,7 +22,7 @@ export default {
       map.on('load', () => {
         map.addSource('stadiums', {
           type: 'geojson',
-          data: 'http://localhost:3000/stadiums.json'
+          data: 'http://localhost:3000/stadiums'
         });
         // Adds layer over the map display corresponding to each post
         map.addLayer({
