@@ -16,7 +16,7 @@ export default {
         container: 'map', // container ID
         style: 'mapbox://styles/mapbox/streets-v11', // style URL
         center: [-96.62, 42], // starting position [lng, lat]
-        zoom: 4, // starting zoom
+        zoom: 3.7, // starting zoom
       });
       // Access user created posts for map locations
       map.on('load', () => {
