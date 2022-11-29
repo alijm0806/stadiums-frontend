@@ -22,7 +22,7 @@ export default {
       map.on('load', () => {
         map.addSource('stadiums', {
           type: 'geojson',
-          // data: 'https://mighty-plateau-71758.herokuapp.com/stadiums'
+          data: 'https://mighty-plateau-71758.herokuapp.com/stadiums',
           data: 'http://localhost:3000/stadiums'
         });
 
