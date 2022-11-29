@@ -1,4 +1,5 @@
 <script>
+import "/node_modules/flag-icons/css/flag-icons.min.css";
 export default {
   data: function () {
     return {
@@ -20,21 +21,29 @@ export default {
       <a class="navbar-brand" href="#">
         <img class="Logo" src="./assets/WCLogo.webp" alt="">
       </a>
+      <li v-if="isLoggedIn" class="nav-item">
+        <a class="Logo p-2 " aria-current="page" href="#"><span class="fi fi-um "></span></a>
+      </li>
+      <li v-if="isLoggedIn" class="nav-item">
+        <a class="Logo p-2 " aria-current="page" href="#"><span class="fi fi-ca"></span></a>
+      </li>
+      <li v-if="isLoggedIn" class="nav-item">
+        <a class="Logo p-2 " aria-current="page" href="#"><span class="fi fi-mx"></span></a>
+      </li>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main" aria-controls="main"
         aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="main">
         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+
           <li v-if="isLoggedIn" class="nav-item">
             <a class="nav-link p-lg-3 active" aria-current="page" href="/">Home</a>
           </li>
           <li v-if="isLoggedIn" class="nav-item">
             <a class="nav-link p-2 p-lg-3" aria-current="page" href="/stadiums">Stadiums</a>
           </li>
-          <li v-if="isLoggedIn" class="nav-item">
-            <a class="nav-link p-2 p-lg-3 " aria-current="page" href="#">About</a>
-          </li>
+
           <li v-if="!isLoggedIn" class="nav-item">
             <a class="nav-link p-2 p-lg-3 " aria-current="page" href="/login">Login</a>
           </li>
@@ -80,6 +89,7 @@ body {
 .navbar .navbar-nav .nav-link {
   color: white;
 }
+
 
 .navbar .navbar-nav .nav-link.active {
   color: var(--green-color);
@@ -134,6 +144,13 @@ body {
   position: center;
   width: 100px;
   height: 70px
+}
+
+.Logo span {
+  display: inline-block;
+  position: center;
+  width: 100px;
+  height: 50px
 }
 
 

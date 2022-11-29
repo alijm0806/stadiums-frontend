@@ -22,8 +22,8 @@ export default {
       map.on('load', () => {
         map.addSource('stadiums', {
           type: 'geojson',
-          data: 'https://mighty-plateau-71758.herokuapp.com/stadiums'
-          // data: 'http://localhost:3000/stadiums'
+          // data: 'https://mighty-plateau-71758.herokuapp.com/stadiums'
+          data: 'http://localhost:3000/stadiums'
         });
         // Adds layer over the map display corresponding to each post
         map.addLayer({
@@ -48,7 +48,7 @@ export default {
           // Pop-up box will appear when clicked on
           new mapboxgl.Popup({ offset: 25 })
             .setLngLat(coordinates)
-            .setHTML(`<a href="/stadiums/${stadium_id}"><img src="${image}" width="400" /><p><b>${name}</p></a>`)
+            .setHTML(`<a href="/stadiums/${stadium_id}"><img src="${image}" width="200" /><p><b>${name}</p></a>`)
             .addClassName('popup')
             .addTo(map);
 

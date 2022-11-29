@@ -49,10 +49,14 @@ export default {
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen></iframe>
         </section>
+        <div class="mt-5">
+          <router-link to="/stadiums">
+            <button class="btn btn-primary mb-1">
+              GO BACK </button>
+          </router-link>
+        </div>
       </div>
-      <div class="mt-5">
-        <router-link to="/stadiums"><b>Back to all stadiums</b></router-link>
-      </div>
+
     </div>
   </div>
 </template>
