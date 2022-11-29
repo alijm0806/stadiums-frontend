@@ -25,6 +25,7 @@ export default {
           // data: 'https://mighty-plateau-71758.herokuapp.com/stadiums'
           data: 'http://localhost:3000/stadiums'
         });
+
         // Adds layer over the map display corresponding to each post
         map.addLayer({
           'id': 'stadiums',
@@ -33,7 +34,7 @@ export default {
           'layout': {
             'icon-image': '{icon}',
             'icon-allow-overlap': true,
-            'icon-size': 2,
+            'icon-size': 2.5,
 
           }
         });

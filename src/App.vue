@@ -71,10 +71,9 @@ export default {
   font-family: 'Times New Roman',
     Times,
     serif;
-
   text-align: center;
   color: var(--dark-color);
-
+  height: calc(100vh - 100px);
 }
 
 body {

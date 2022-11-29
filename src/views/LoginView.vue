@@ -88,11 +88,10 @@ form {
 
 .authentication {
   background: rgb(219, 226, 226);
-  height: 100%;
+  height: calc(100vh - 100px);
   justify-content: center;
   display: flex;
   align-items: center;
-  margin-top: 180px;
 }
 
 
