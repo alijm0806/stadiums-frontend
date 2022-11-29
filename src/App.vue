@@ -87,10 +87,15 @@ body {
 
 .navbar .navbar-nav .nav-link {
   color: white;
+  font-size: 20px;
+  letter-spacing: 0.1em;
 }
 
+.navbar .nav-item .nav-link.active {
+  color: var(--green-color);
+}
 
-.navbar .navbar-nav .nav-link.active {
+.navbar .nav-item .nav-link-exact-active:active {
   color: var(--green-color);
 }
 
