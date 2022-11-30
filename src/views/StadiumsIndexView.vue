@@ -1,5 +1,6 @@
 <script>
 import mapboxgl from 'mapbox-gl';
+
 export default {
   data: function () {
     return {
@@ -19,11 +20,15 @@ export default {
         zoom: 3.7, // starting zoom
       });
       // Access user created posts for map locations
+      const data = process.env.NODE_ENV === "development"
+        ? "http://localhost:3000/stadiums"
+        : "https://mighty-plateau-71758.herokuapp.com/stadiums";
+      console.log("process.env.NODE_ENV", process.env.NODE_ENV)
       map.on('load', () => {
         map.addSource('stadiums', {
           type: 'geojson',
-          data: 'https://mighty-plateau-71758.herokuapp.com/stadiums',
-          // data: 'http://localhost:3000/stadiums'
+          // data: 'https://mighty-plateau-71758.herokuapp.com/stadiums',
+          data: data
         });
 
         // Adds layer over the map display corresponding to each post
