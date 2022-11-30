@@ -38,14 +38,14 @@ export default {
         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
 
           <li v-if="isLoggedIn" class="nav-item">
-            <a class="nav-link p-lg-3 active" aria-current="page" href="/">Home</a>
+            <a class="nav-link p-lg-3 active" aria-current="page" href="/home">Home</a>
           </li>
           <li v-if="isLoggedIn" class="nav-item">
             <a class="nav-link p-2 p-lg-3" aria-current="page" href="/stadiums">Stadiums</a>
           </li>
 
           <li v-if="!isLoggedIn" class="nav-item">
-            <a class="nav-link p-2 p-lg-3 " aria-current="page" href="/login">Login</a>
+            <a class="nav-link p-2 p-lg-3 " aria-current="page" href="/">Login</a>
           </li>
           <li v-if="isLoggedIn" class="nav-item">
             <a class="nav-link p-2 p-lg-3 " aria-current="page" href="/logout">Logout</a>
@@ -77,7 +77,9 @@ export default {
 }
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Times New Roman',
+    Times,
+    serif;
   height: 100vh
 }
 
