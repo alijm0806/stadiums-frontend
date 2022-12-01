@@ -78,25 +78,33 @@ export default {
     background: linear-gradient(255deg, #e91e63, #03a9f4);
     z-index: 1;
     mix-blend-mode: darken;
-    box-shadow: 10px 10px 10px 10px;
-    /* margin-left: 15%; */
+    box-shadow: 10px 10px 10px 10px
   }
 
   #info {
     padding-top: 30px;
     display: absolute;
-    font-size: 1.5rem;
-    /* position: relative; */
+    font-size: 1.3rem;
     border: 1px solid rgba(50, 50, 50);
-    width: 300px;
-    height: 300px;
+    width: 280px;
+    height: 280px;
     border-radius: 20px;
     box-shadow: 10px 10px 10px;
     background-color: rgb(171, 203, 124);
-    top: 0;
-    /* left: 0; */
-    float: none;
+    /* top: 0;
+    float: none; */
   }
 
+  .img-responsive {
+    display: flex;
+    width: 100%;
+    max-width: 100%;
+    object-fit: cover;
+    height: 100%;
+    max-height: 100%;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px
+  }
 }
 </style>
