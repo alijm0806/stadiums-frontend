@@ -91,8 +91,7 @@ export default {
     border-radius: 20px;
     box-shadow: 10px 10px 10px;
     background-color: rgb(171, 203, 124);
-    /* top: 0;
-    float: none; */
+    overflow: scroll;
   }
 
   .img-responsive {
