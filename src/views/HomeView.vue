@@ -51,7 +51,7 @@ export default {
 
   .home-video {
     position: fixed;
-    top: 28%;
+    top: 5%;
     right: 0;
   }
 }
