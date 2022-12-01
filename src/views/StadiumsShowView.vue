@@ -24,7 +24,7 @@ export default {
   <div class="show-stadiums">
     <div class="container">
       <div class="card mb-3 mt-5 ms-5" style="max-width: 90%; border: none">
-        <div class="row g-0">
+        <div class="row show-row g-0">
           <div class="col-md-6">
             <img class="img-responsive" v-bind:src="stadium.image" v-bind:alt="stadium.name" type="video/mp4" />
           </div>
@@ -60,3 +60,43 @@ export default {
     </div>
   </div>
 </template>
+<style>
+.show-row {
+  background: white;
+  border-radius: 30px;
+  background: linear-gradient(255deg, #e91e63, #03a9f4);
+  z-index: 1;
+  mix-blend-mode: darken;
+  box-shadow: 10px 10px 10px 10px;
+}
+
+@media only screen and (max-width: 600px) {
+  .show-row {
+    width: 300px;
+    background: white;
+    border-radius: 30px;
+    background: linear-gradient(255deg, #e91e63, #03a9f4);
+    z-index: 1;
+    mix-blend-mode: darken;
+    box-shadow: 10px 10px 10px 10px;
+    /* margin-left: 15%; */
+  }
+
+  #info {
+    padding-top: 30px;
+    display: absolute;
+    font-size: 1.5rem;
+    /* position: relative; */
+    border: 1px solid rgba(50, 50, 50);
+    width: 300px;
+    height: 300px;
+    border-radius: 20px;
+    box-shadow: 10px 10px 10px;
+    background-color: rgb(171, 203, 124);
+    top: 0;
+    /* left: 0; */
+    float: none;
+  }
+
+}
+</style>
