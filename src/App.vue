@@ -22,13 +22,13 @@ export default {
         <img class="Logo" src="./assets/WCLogo.webp" alt="">
       </a>
       <li v-if="isLoggedIn" class="nav-item">
-        <a class="Logo p-2 " aria-current="page" href="#"><span class="fi fi-um "></span></a>
+        <a class="Logo p-2" aria-current="page" href="#"><span class="fi fi-um "></span></a>
       </li>
       <li v-if="isLoggedIn" class="nav-item">
-        <a class="Logo p-2 " aria-current="page" href="#"><span class="fi fi-ca"></span></a>
+        <a class="Logo p-2" aria-current="page" href="#"><span class="fi fi-ca"></span></a>
       </li>
       <li v-if="isLoggedIn" class="nav-item">
-        <a class="Logo p-2 " aria-current="page" href="#"><span class="fi fi-mx"></span></a>
+        <a class="Logo p-2" aria-current="page" href="#"><span class="fi fi-mx"></span></a>
       </li>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main" aria-controls="main"
         aria-expanded="false" aria-label="Toggle navigation">
@@ -159,6 +159,23 @@ body {
   height: 50px
 }
 
+@media screen and (max-width: 600px) {
+  .Logo {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+
+  }
+
+  .Logo span {
+    display: inline-block;
+    position: center;
+    width: 50px;
+    height: 50px;
+    right: 50%;
+    bottom: 25%;
+  }
+}
 
 h1 {
   color: red

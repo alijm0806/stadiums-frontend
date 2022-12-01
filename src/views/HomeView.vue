@@ -48,6 +48,12 @@ export default {
     background-position: -300px;
     width: 100%;
   }
+
+  .home-video {
+    position: fixed;
+    top: 28%;
+    right: 0;
+  }
 }
 </style>
 
