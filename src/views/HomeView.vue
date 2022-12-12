@@ -35,24 +35,38 @@ export default {
   height: calc(100vh - 150px);
 }
 
-.home-video {
+.container .home-video {
+  display: flex;
   position: fixed;
+  align-items: center;
+  justify-items: center;
   top: 28%;
   right: 25%;
 }
 
 @media only screen and (max-width: 600px) {
-  .show-stadiums {
+  .container .show-stadiums {
     background: rgb(0, 0, 0)url("../assets/WCLogo.webp") no-repeat center center fixed;
     background-size: cover;
     background-position: -300px;
     width: 100%;
   }
 
-  .home-video {
+  .container .home-video {
     position: fixed;
-    top: 5%;
+    top: 15%;
     right: 0;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .container .home-video {
+    display: flex;
+    position: fixed;
+    align-items: center;
+    justify-items: center;
+    top: 28%;
+    right: 25%;
   }
 }
 </style>
