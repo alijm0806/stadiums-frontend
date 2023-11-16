@@ -39,7 +39,7 @@ export default {
           'layout': {
             'icon-image': '{icon}',
             'icon-allow-overlap': true,
-            'icon-size': 2.5,
+            'icon-size': 3,
 
           }
         });
@@ -92,5 +92,13 @@ export default {
   width: 100%;
   height: 100%;
   display: flex;
+}
+.addLayer {
+  /* background-image: url('mapbox-icon.png'); */
+  background-size: cover;
+  width: 100px;
+  height: 50px;
+  border-radius: 50%;
+  cursor: pointer;
 }
 </style>
